@@ -83,7 +83,7 @@ function scrollTop() {
 window.addEventListener("scroll", scrollTop);
 // DARK LIGHT THEME
 const themeButton = document.getElementById("theme-button");
-const darkTheme = "dark-theme";
+const darkTheme = "light-theme";
 const iconTheme = "bx-toggle-right";
 
 // Previously selected topic (if user selected)
@@ -125,22 +125,16 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(
-  `.home__data, .home__img, 
-           .decoration__data,
-           .products__content,
-           .footer__content`,
-  {
-    origin: "top",
-    interval: 200,
-  }
-);
+sr.reveal(`.home__data, .home__img,.products__content, .footer__content`, {
+  origin: "top",
+  interval: 200,
+});
 
-sr.reveal(`.share__img, .contacts__content`, {
+sr.reveal(`.about__img, .contacts__content`, {
   origin: "left",
 });
 
-sr.reveal(`.share__data, .contacts__img`, {
+sr.reveal(`.about__data, .contacts__img`, {
   origin: "right",
 });
 
