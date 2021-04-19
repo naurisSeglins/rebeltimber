@@ -406,6 +406,19 @@ section.home {
   }
 }
 
+@media screen and (max-width: 440px) {
+  .home__title {
+    margin-top: 4.5rem;
+    font-size: 3rem;
+  }
+  .home__description {
+    width: auto;
+  }
+  .home__container {
+    row-gap: 0;
+  }
+}
+
 /* HOME */
 
 /* ABOUT */
@@ -481,6 +494,16 @@ section.home {
 
   .about__img {
     justify-self: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .about__img {
+    display: none;
+  }
+
+  .about__description {
+    font-size: 0.9rem;
   }
 }
 
