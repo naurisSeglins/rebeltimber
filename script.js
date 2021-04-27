@@ -81,6 +81,7 @@ function scrollTop() {
   else scrollTop.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollTop);
+
 // DARK LIGHT THEME
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "light-theme";
@@ -117,6 +118,16 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+  if (document.body.classList.contains(darkTheme)) {
+    document.querySelector(".dark_logo").classList.add("logo_gone");
+  } else {
+    document.querySelector(".dark_logo").classList.remove("logo_gone");
+  }
+  if (document.body.classList.contains(darkTheme)) {
+    document.querySelector(".white_logo").classList.remove("logo_gone");
+  } else {
+    document.querySelector(".white_logo").classList.add("logo_gone");
+  }
 });
 // SCROLL REVEAL ANIMATION
 const sr = ScrollReveal({

@@ -287,6 +287,10 @@ img {
   background-color: var(--title-color);
   border-radius: 50%;
 }
+
+.logo_gone {
+  display: none;
+}
 /* ACTIVE MENU LINK */
 
 /* SCROLL TOP */
