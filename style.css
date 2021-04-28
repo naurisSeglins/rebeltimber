@@ -327,7 +327,7 @@ img {
 
 /* HOME */
 section.home {
-  background-image: url(./images/background_img_10.jpg);
+  background-image: url(./images/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
